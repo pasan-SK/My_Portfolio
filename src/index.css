@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #ffffff;
+  --color-brand-secondary: rgba(255, 255, 255, 0.5);
+  --color-brand-muted: rgba(255, 255, 255, 0.1);
+  --color-brand-bg: #0a0a0a;
+  --color-brand-accent: rgba(255, 255, 255, 0.05);
+  --color-brand-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-brand-bg text-brand-primary selection:bg-white selection:text-black;
+  }
+  
+  h1, h2, h3, .font-serif {
+    @apply font-serif;
+  }
+}
+
+.timeline-line {
+  @apply absolute left-[7px] top-6 bottom-0 w-[1px] bg-brand-border;
+}
+
+.timeline-dot {
+  @apply absolute left-0 top-3 w-[15px] h-[15px] rounded-full border-[1px] border-white bg-brand-bg z-10;
+}
