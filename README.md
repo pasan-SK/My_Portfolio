@@ -2,19 +2,4 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/4cb12982-2349-4eae-bd01-92a6dbcb8bd9
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+My Portfolio website built using ReactJS, showcasing my research work, projects, and publications in the field of Computer Vision, NLP, and Medical AI. The website is designed to provide an overview of my academic and professional journey, highlighting my contributions to the field and my ongoing research endeavors. It serves as a platform to share my work with the broader community and connect with fellow researchers and professionals in the industry.
