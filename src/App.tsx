@@ -121,7 +121,7 @@ export default function App() {
           <div className="space-y-2">
             <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Social</p>
             <div className="flex flex-wrap gap-x-6 gap-y-2">
-              <a href="https://linkedin.com" target="_blank" className="flex items-center gap-1.5 text-sm hover:text-white text-white/70 underline underline-offset-4 decoration-white/20">
+              <a href="https://linkedin.com/" target="_blank" className="flex items-center gap-1.5 text-sm hover:text-white text-white/70 underline underline-offset-4 decoration-white/20">
                 <Linkedin size={14} className="opacity-50" /> LinkedIn
               </a>
               <a href="https://github.com" target="_blank" className="flex items-center gap-1.5 text-sm hover:text-white text-white/70 underline underline-offset-4 decoration-white/20">
@@ -142,12 +142,28 @@ export default function App() {
 
         {/* About Section */}
         <Section title="Overview" icon={Globe} id="about">
-          <div className="grid md:grid-cols-12 gap-12">
-            <div className="md:col-span-5">
+          <div className="grid md:grid-cols-12 gap-12 items-start">
+            
+            {/* Left Column: Image and Heading */}
+            <div className="md:col-span-5 flex flex-col gap-8">
+              
+              {/* Profile Image with Vignette Container */}
+              <div className="relative w-64 md:w-80 mx-auto md:mx-0 rounded-sm overflow-hidden">
+                <img 
+                  src="/profile.jpeg" 
+                  alt="Pasan Kalansooriya" 
+                  className="w-full h-auto object-cover"
+                />
+                {/* Vignette Overlay fading to brand background */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_60%,#0a0a0a_100%)]"></div>
+              </div>
+
               <h3 className="text-3xl font-serif text-white/90 leading-tight">
                 Synthesizing intelligence through real-world computational research.
               </h3>
             </div>
+
+            {/* Right Column: Text */}
             <div className="md:col-span-7 space-y-8">
               <p className="text-lg text-white/50 leading-relaxed font-serif italic">
                 Currently pursuing a PhD at the Faculty of Medicine, Dentistry and Health Science, University of Melbourne. My work focuses on developing decision support systems for Vestibular Schwannoma treatment, funded by the Melbourne Research Scholarship.
