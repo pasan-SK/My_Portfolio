@@ -1,5 +1,5 @@
 import React from "react";
-import { Linkedin, Github, BookOpen, Mail } from "lucide-react";
+import { Linkedin, Github, BookOpen, Mail, GraduationCap, Fingerprint } from "lucide-react";
 
 interface ContactItem {
   label: string;
@@ -11,7 +11,9 @@ interface ContactItem {
 export function ContactStrip() {
   const socialLinks = [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/pasan-kalansooriya-825b54213/', icon: Linkedin },
-    { name: 'GitHub', url: 'https://github.com', icon: Github },
+    { name: 'GitHub', url: 'https://github.com/pasan-SK', icon: Github },
+    { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=d1rDI_YAAAAJ&hl=en', icon: GraduationCap },
+    { name: 'ORCID', url: 'https://orcid.org/0009-0002-3934-8226', icon: Fingerprint },
     { name: 'Medium', url: 'https://medium.com/@pasanSK', icon: BookOpen },
   ];
 
@@ -22,7 +24,7 @@ export function ContactStrip() {
         <p className="text-sm font-medium text-white/70">Melbourne, Australia</p>
       </div>
       <div className="space-y-2">
-        <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Social</p>
+        <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Professional Presence</p>
         <div className="flex flex-wrap gap-x-6 gap-y-2">
           {socialLinks.map(({ name, url, icon: Icon }) => (
             <a

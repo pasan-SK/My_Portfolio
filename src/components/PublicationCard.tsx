@@ -7,8 +7,8 @@ interface PublicationCardProps {
   title: string;
   journal: string;
   authors: string;
-  tags: string[];
-  link?: string;
+  tags: readonly string[];
+  link: string;
   achievement?: string;
   status?: string;
 }

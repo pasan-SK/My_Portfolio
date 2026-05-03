@@ -1,11 +1,5 @@
 export const NAVIGATION_ITEMS = ['About', 'Experience', 'Research', 'Education', 'Contact'] as const;
 
-export const SOCIAL_LINKS = [
-  { name: 'LinkedIn', url: 'https://linkedin.com/', icon: 'Linkedin' },
-  { name: 'GitHub', url: 'https://github.com', icon: 'Github' },
-  { name: 'Medium', url: 'https://medium.com/@pasanSK', icon: 'BookOpen' },
-] as const;
-
 export const CONTACT_LINKS = {
   location: { label: 'Location', value: 'Melbourne, Australia' },
   email: { label: 'Email', value: 'pasanxavioz@gmail.com', href: 'mailto:pasanxavioz@gmail.com' },
@@ -99,9 +93,9 @@ export const PUBLICATIONS_DATA = [
 ] as const;
 
 export const FOOTER_LINKS = [
-  { label: 'LINKEDIN', url: 'https://linkedin.com' },
-  { label: 'GITHUB', url: 'https://github.com' },
+  { label: 'LINKEDIN', url: 'https://www.linkedin.com/in/pasan-kalansooriya-825b54213/' },
+  { label: 'GITHUB', url: 'https://github.com/pasan-SK' },
   { label: 'MEDIUM', url: 'https://medium.com/@pasanSK' },
-  { label: 'SCHOLAR', url: 'https://scholar.google.com' },
-  { label: 'ORCID', url: '#' },
+  { label: 'SCHOLAR', url: 'https://scholar.google.com/citations?user=d1rDI_YAAAAJ&hl=en' },
+  { label: 'ORCID', url: 'https://orcid.org/0009-0002-3934-8226' },
 ] as const;
