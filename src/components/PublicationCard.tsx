@@ -24,12 +24,16 @@ export function PublicationCard({
   status,
 }: PublicationCardProps) {
   return (
-    <motion.div
-      className="group p-8 border border-brand-border hover:bg-brand-accent transition-all flex gap-10 items-start overflow-hidden rounded-sm"
+    <motion.a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cursor-pointer group p-8 border border-brand-border hover:bg-brand-accent transition-all flex gap-10 items-start overflow-hidden rounded-sm text-left"
     >
       <span className="text-4xl font-serif text-white/5 group-hover:text-white/20 transition-colors leading-none">
         {id}
       </span>
+      
       <div className="flex-1">
         <div className="flex justify-between items-start gap-4 mb-4">
           <h3 className="text-2xl font-serif text-white/90 group-hover:text-white transition-colors">
@@ -41,12 +45,15 @@ export function PublicationCard({
             </span>
           )}
         </div>
+        
         <p className="text-sm font-serif italic text-white/40 mb-2">{journal}</p>
+        
         {achievement && (
           <p className="text-[10px] text-white/60 mb-4 font-mono uppercase tracking-widest">
             {achievement}
           </p>
         )}
+        
         <div className="flex flex-wrap gap-x-6 gap-y-3 items-center">
           <p className="text-[10px] font-mono text-white/30 uppercase">{authors}</p>
           <div className="flex gap-2">
@@ -59,18 +66,14 @@ export function PublicationCard({
               </span>
             ))}
           </div>
+          
           {link && (
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-[10px] font-mono text-white/40 hover:text-white transition-colors border-b border-white/10"
-            >
+            <span className="flex items-center gap-1 text-[10px] font-mono text-white/40 group-hover:text-white transition-colors border-b border-white/10">
               DOI / ACCESS <ExternalLink size={10} />
-            </a>
+            </span>
           )}
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

@@ -92,6 +92,37 @@ export const PUBLICATIONS_DATA = [
   }
 ] as const;
 
+export const GALLERY_DATA = [
+  {
+    id: 1,
+    src: "/AOTULE.JPG",
+    alt: "AOTULE Research Fellows at Tokyo Tech",
+    caption: "With the AOTULE student cohort at Institute of Science Tokyo, representing top engineering universities across Asia-Oceania.",
+    tag: "Global Research"
+  },
+  {
+    id: 2,
+    src: "/Graduation.jpg",
+    alt: "Receiving BSc Degree",
+    caption: "Receiving my BSc Eng. (Hons) from the Chancellor of the University of Moratuwa.",
+    tag: "Academic Milestone"
+  },
+  {
+    id: 2,
+    src: "/AOTULE-MISW.JPG",
+    alt: "15th MISW 2024 Group Photo",
+    caption: "Following my presentation at the 15th Multidisciplinary International Student Workshop (MISW) 2024 at the Institute of Science Tokyo.",
+    tag: "Academic Conference"
+  },
+  {
+    id: 4,
+    src: "/SLGS committee.jpg",
+    alt: "SLGS Executive Committee 2025/26",
+    caption: "Serving as Event Organizer for the Sri Lankan Graduates' Society at the University of Melbourne.",
+    tag: "Volunteer Leadership"
+  }
+] as const;
+
 export const FOOTER_LINKS = [
   { label: 'LINKEDIN', url: 'https://www.linkedin.com/in/pasan-kalansooriya-825b54213/' },
   { label: 'GITHUB', url: 'https://github.com/pasan-SK' },

@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "motion/react";
-import { ExternalLink } from "lucide-react";
 import { fadeIn } from "../constants/animations";
 
 export function Hero() {
@@ -22,12 +21,23 @@ export function Hero() {
         </p>
       </div>
       <div className="md:col-span-4 flex md:justify-end gap-4">
-        <button className="px-8 py-4 bg-white text-black text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-white/90 transition-all">
+        
+        <a 
+          href="#contact"
+          className="px-8 py-4 bg-white text-black text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-white/90 transition-all block text-center"
+        >
           Connect
-        </button>
-        <button className="px-8 py-4 border border-white/20 text-[10px] uppercase tracking-[0.2em] hover:bg-white/5 transition-all">
+        </a>
+        
+        <a 
+          href="/Pasan_Kalansooriya_CV.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-8 py-4 border border-white/20 text-[10px] uppercase tracking-[0.2em] hover:bg-white/5 transition-all block text-center text-white"
+        >
           Resume
-        </button>
+        </a>
+        
       </div>
     </motion.header>
   );

@@ -13,6 +13,7 @@ import { Research } from "./components/Research";
 import { Education } from "./components/Education";
 import { EngagementSection } from "./components/EngagementSection";
 import { Footer } from "./components/Footer";
+import { Gallery } from "./components/Gallery";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Experience />
         <Research />
         <Education />
+        <Gallery />
         <EngagementSection />
         <Footer />
       </div>

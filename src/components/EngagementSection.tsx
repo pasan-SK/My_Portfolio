@@ -14,7 +14,10 @@ export function EngagementSection() {
           </h2>
         </div>
         <a
-          href="mailto:pasanxavioz@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=pasanxavioz@gmail.com"
+          // target="_blank" will open in a new tab without taking the users away from the site
+          target="_blank"
+          rel="noopener noreferrer"
           className="group flex items-center gap-4 bg-white text-black px-12 py-6 text-sm font-bold uppercase tracking-[0.2em] hover:scale-105 transition-transform"
         >
           Start Conversation
